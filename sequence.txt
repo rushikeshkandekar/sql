@@ -1,0 +1,17 @@
+**default**(create table person make id as primary key default nextval sequencename**
+ 
+create table person(id int primary key default nextval('sequence'),firstname varchar(10),lastname varchar(10),address1 varchar(20),
+                   address2 varchar(40),city varchar(20),state varchar(20));
+                   insert into person(firstname,lastname,address1,address2,city,state) values('rushi','kandekar','kopar','kayan','thane'
+                                            'maharastra'),
+
+
+('ajit','aher','dombivali','diva','mumbai','maharastra'),
+                         ('akash','karpe','vashi','vikroli','sangamner','maharastra');
+
+**sequenced**
+INSERT INTO public.employee(
+	id, firstname, lastname, adress1, adress2, city, state)
+	VALUES (nextval('seq_emp_id'),'rushi' , 'kandekar', 'dombivali', 'sangamner', 'thane', 'maharastra');
+    select * from employee;
+                             
